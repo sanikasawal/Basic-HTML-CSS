@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Setting Font Size </title>
+<style>
+body {
+	/*2em= twice the 120%size*/
+	/*for 4em if we did style=4em, then it would have done 2emx4em. hence oif we want 4em we will only give style=2em*/
+	/*.5em to half the size*/
+	/*2em=200%*/
+    font-size: 120%;
+}
+</style>
+</head>
+<body>
+<div>Regular text</div>
+<div style="font-size: 2em">2em text 
+	<div style="font-size: 2em;">4em text
+		<div style="font-size: .5em">2em again!</div>
+	</div>
+</div>
+</body>
+</html>

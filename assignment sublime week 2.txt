@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+</head>
+<link rel="stylesheet" href="css/style.css">
+<body>
+    <h1>Our Menu</h1>
+
+    <div class="row">
+      <div class="col-lg-1 col-md-1 col-sl-1">
+          <div class="container">
+              <p class="heading bg-red">Hello</p>
+              <p class="text">Section title region: Each section should have a section title region that is always
+                  positioned at the top right corner of the section no matter the view (desktop, tablet or mobile).
+                  Copy the titles from the mockup illustration.
+              </p>
+          </div>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sl-2">
+          <div class="container">
+              <p class="heading bg-blue">Namaskar</p>
+              <p class="text">Section title region: Each section should have a section title region that is always
+                  positioned at the top right corner of the section no matter the view (desktop, tablet or mobile).
+                  Copy the titles from the mockup illustration (i.e., Chicken, Beef, Sushi) or come up with your own.
+                  (Hint: use relative and absolute positioning and offsets as discussed in Lecture 22.)
+              </p>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sl-3">
+          <div class="container">
+              <p class="heading bg-green">Bonjour</p>
+              <p class="text">Section title region: Each section should have a section title region that is always
+                  positioned at the top right corner of the section no matter the view (desktop, tablet or mobile).
+                  Copy the titles from the mockup illustration (i.e., Chicken, Beef, Sushi) or come up with your own.
+                  (Hint: use relative and absolute positioning and offsets as discussed in Lecture 22.)
+              </p>
+          </div>
+      </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////**************************//////////
+
+
+
+*{
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+h1{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: xxx-large;
+}
+
+p{
+    color: white;
+}
+
+.heading{
+    font-size: larger;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0px;
+    border: 1px;
+    border-color: black;
+    border-style: none none solid solid;
+    width: max-content;
+}
+
+.bg-blue{
+    background-color: #8de8f7;
+    color: black;
+}
+
+.bg-red{
+    background-color: #f78d8d;
+    color: black;
+}
+
+.bg-green{
+    background-color: #8df7b6;
+    color: black;
+}
+
+
+.text{
+    text-align: justify;
+    margin: 60px 15px 15px 15px;
+    color: black;
+}
+
+.row {
+  width: 100%;
+  padding: 0px 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.col-lg-1, .col-lg-2, .col-lg-3, .col-md-1, .col-md-2, .col-md-3, .col-sl-1, .col-sl-2, .col-sl-3{
+    float: left;
+    padding: 10px;
+}
+
+.container{
+    position: relative;
+    border: 1px solid black;
+    background-color: #F2F2F2;
+    height: 250px;
+}
+
+@media (min-width: 992px){
+
+  .col-lg-1 {
+    width: 33.3%;
+  }
+  .col-lg-2 {
+    width: 33.3%;
+  }
+  .col-lg-3 {
+    width: 33.3%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+	 .col-md-1 {
+    width: 50%;
+  }
+  .col-md-2 {
+    width: 50%;
+  }
+  .col-md-3 {
+    width:100%;
+  }
+}
+@media (max-width: 767px){
+
+	 .col-sl-1 {
+    width: 100%;
+    padding: 10px 50px;
+  }
+  .col-sl-2 {
+    width: 100%;
+    padding: 10px 50px;
+  }
+  .col-sl-3 {
+    width:100%;
+    padding: 10px 50px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*******************************************************************************************
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Module2</title>
+	<link rel="stylesheet" type="text/css" href="design.css">
+
+</head>
+<body>
+<h2><center>Our Menu</center></h2>
+<div class="row" >
+
+<div class="div1 col-lg-4 col-sm-12 col-md-6" >
+	<section class="sec1">
+	<p class="title" >CHICKEN</p>
+	<p class="text">The chicken, Gallus gallus domesticus, is a domestic subspecies of the red junglefowl, a member of the pheasant family that is native to Asia. Genetic studies have found that the grey junglefowl also contributed to the chicken’s evolution.</p>
+	</section>
+</div>
+
+<div class="div2 col-lg-4 col-sm-12 col-md-6" >
+	<section class="sec1">
+	<p class="title" >BEEF</p>
+	<p class="text">Beef, flesh of mature cattle, as distinguished from veal, the flesh of calves. The best beef is obtained from early maturing, special beef breeds. High-quality beef has firm, velvety, fine-grained lean, bright red in colour and well-marbled. The fat is smooth, creamy white, and well distributed. In young beef the bones are soft, porous, and red; the less desirable mature beef has hard white bones.</p>
+	</section>
+</div>
+
+<div class="div3 col-lg-4 col-sm-12 col-md-12">
+	<section class="sec1">
+	<p class="title" >SUSHI</p>
+	<p class="text">Sushi is the first name that strikes us when Japanese cuisine is mentioned. Sushi is perhaps the best known Japanese food dish to the outside world. It is a recipe that consists of rice and fish with a flavor of vinegar. However, there are many variations of Sushi that are lesser known by people outside Japan.
+	</p>
+	</section>
+</div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+//////////////********************/////////////////////
+
+
+*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	
+h2{
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+	.row{
+		overflow: auto;
+	}
+
+	.div1{
+		position: relative;
+		float: left;
+	    width: 33.33%;
+	}
+
+	.div2{
+		position: relative;
+		float: left;
+	    width: 33.33%;
+		}
+    
+  .div3{
+    position: relative;
+    float: right;
+    width: 33.33%;
+    	}
+	
+	.title{
+		top:0;
+		right: 0;
+		background-color: #D8BFD8;
+		border: 1px solid black;
+		position: absolute;
+    text-align: center;
+    width: 100px;
+    font-size: 20px;
+
+	}
+
+  
+  .sec1{
+    margin:10px ;
+    border : 2px solid black;
+    position: relative;
+    font-family:  Helvetica;
+    background-color: #483D8B;
+    }
+    
+    .text{
+    margin: 40px 10px 10px 10px;
+    font-size: 16px;
+    font-family:  Helvetica;
+    color: white;
+    }
+
+	
+/*media queries*/
+
+/*large devices*/
+ @media (min-width: 992px){
+ 	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-1{
+  	width: 8.33%;
+  }
+  .col-lg-2{
+  	width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+ }
+/*tablet*/
+ @media (min-width: 768px) and (max-width: 991px){
+ 	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-1{
+  	width: 8.33%;
+  }
+  .col-md-2{
+  	width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+ }
+/*small devices*/
+@media (max-width: 767px){
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+  .col-sm-1{
+  	width: 8.33%;
+  }
+  .col-sm-2{
+  	width: 16.66%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.33%;
+  }
+  .col-sm-5 {
+    width: 41.66%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.33%;
+  }
+  .col-sm-8 {
+    width: 66.66%;
+  }
+  .col-sm-9 {
+    width: 74.99%;
+  }
+  .col-sm-10 {
+    width: 83.33%;
+  }
+  .col-sm-11 {
+    width: 91.66%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}

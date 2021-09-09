@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pseudo Class Selectors</title>
+<style>
+	
+/*when we have to remove the boot point*/
+header li {
+	list-style: none;
+}
+
+/*when we will visit the link*/
+a:link, a:visited {
+	text-decoration: none;
+	background-color: green;
+	border: 1px solid blue;
+    color: black;
+    /*a is a inline as well as block but we want block levele here*/
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+/*when we will hover over the site the color changes*/
+a:hover, a:active {
+	background-color: red;
+	color: purple;
+}
+
+header li:nth-child(3) {
+	font-size: 25px;
+} 
+
+section div:nth-child(odd) {
+	background-color: gray;
+	cursor: pointer;
+}
+
+section div:nth-child(4):hover {
+	background-color: green;
+
+}
+</style>
+</head>
+<body>
+<h1> Pseudo Class Selectors</h1>
+<header>
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="http://goo.gl/V0Wl6s" target="_blank">AngularJS Course</a></li>
+		<li><a href="http://wwww.facebook.com" target="_blank">Facebook page</a></li>
+	</ul>
+</header>
+<section>
+	<div>DIV 1</div>
+	<div>DIV 2</div>
+	<div>DIV 3</div>
+	<div>DIV 4</div>
+	<div>DIV 5</div>
+	<div>DIV 6</div>
+</section>
+</body>
+</html>

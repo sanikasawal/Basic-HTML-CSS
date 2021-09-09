@@ -1,0 +1,61 @@
+#include <iostream>
+
+     //including standard header file
+
+void sum(int*p, int n, int d[])    //function definition 
+{
+
+
+
+int i;     //declaring integer type variable 
+
+*p = 0;    //intializing pointer p
+
+//loop to add the numbers 
+
+
+for(i = 0; i < n; ++i)      
+*p = *p + d[i];
+
+ 
+
+}
+
+
+
+int main()
+
+
+{
+
+
+
+int i;             //declaring integer type variable 
+int accum = 0;     //declaring and initializing integer type variable 
+
+int N = 40;        //declaring and initializing integer type variable
+
+
+int data[40];      //declaring integer type variable 
+
+
+//loop to store the numbers 
+
+for(i = 0; i < N; ++i)
+
+
+data[i] = i;
+
+
+
+sum(&accum, N, data);     //call function 
+
+std::cout<<"Sum is:" <<accum;    //print the addition 
+
+
+return 0;
+
+}
+
+
+

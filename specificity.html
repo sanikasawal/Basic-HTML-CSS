@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Specificity</title>
+<style>
+/*Here Blue wins because its specificity score of blue is 12 and that of red is 11*/
+header.navigation p {
+     color: blue;
+}
+p.blurb {
+	color: red;
+}
+/*Here even though the specificity score is 1, the text will appear in gree because of !important*/ 
+p {
+	color: green !important;
+}
+</style>
+</head>
+<body>
+	<header class="navigation">
+		<p class="blurb"> Specificity is interesting.</p>
+	</header>
+</body>
+</html>
+
+
